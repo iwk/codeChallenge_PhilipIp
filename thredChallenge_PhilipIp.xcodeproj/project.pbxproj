@@ -10,6 +10,10 @@
 		4D958E156D41B9EBF81E4165 /* Pods_thredChallenge_PhilipIpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C954ED1EF88F69BBE7D38F /* Pods_thredChallenge_PhilipIpTests.framework */; };
 		770CF51FA3A9895E5D0BFAA9 /* Pods_thredChallenge_PhilipIp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817ACCF5416BA1A2505AF805 /* Pods_thredChallenge_PhilipIp.framework */; };
 		957F0695C6C28AD9A1F2C432 /* Pods_thredChallenge_PhilipIpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3B6D898B22107A26CF1F1B /* Pods_thredChallenge_PhilipIpUITests.framework */; };
+		AEB1FB7920288B0F004E1BFA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7820288B0F004E1BFA /* MapViewController.swift */; };
+		AEB1FB7B20288F16004E1BFA /* GeoChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */; };
+		AEB1FB7D202890BC004E1BFA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7C202890BC004E1BFA /* DataManager.swift */; };
+		AEB1FB7F2028921F004E1BFA /* GeoChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7E2028921F004E1BFA /* GeoChat.swift */; };
 		AEBF2D1E202825C7005BB7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */; };
 		AEBF2D20202825C7005BB7B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1F202825C7005BB7B3 /* ViewController.swift */; };
 		AEBF2D23202825C7005BB7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBF2D21202825C7005BB7B3 /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 		867810D259534E8A78ABD361 /* Pods-thredChallenge_PhilipIp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp.debug.xcconfig"; sourceTree = "<group>"; };
 		8D815BCF02B90CF924CAB91E /* Pods-thredChallenge_PhilipIpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpUITests/Pods-thredChallenge_PhilipIpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		93C954ED1EF88F69BBE7D38F /* Pods_thredChallenge_PhilipIpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thredChallenge_PhilipIpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB1FB7820288B0F004E1BFA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoChatListViewController.swift; sourceTree = "<group>"; };
+		AEB1FB7C202890BC004E1BFA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		AEB1FB7E2028921F004E1BFA /* GeoChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoChat.swift; sourceTree = "<group>"; };
 		AEBF2D1A202825C7005BB7B3 /* thredChallenge_PhilipIp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thredChallenge_PhilipIp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBF2D1F202825C7005BB7B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +123,7 @@
 		AE2898B720285B5F0035B94E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AEB1FB7E2028921F004E1BFA /* GeoChat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				AEBF2D1F202825C7005BB7B3 /* ViewController.swift */,
+				AEB1FB7820288B0F004E1BFA /* MapViewController.swift */,
+				AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 				AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */,
 				AEBF2D21202825C7005BB7B3 /* Main.storyboard */,
 				AEBF2D26202825C7005BB7B3 /* LaunchScreen.storyboard */,
+				AEB1FB7C202890BC004E1BFA /* DataManager.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -511,8 +523,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB1FB7B20288F16004E1BFA /* GeoChatListViewController.swift in Sources */,
+				AEB1FB7D202890BC004E1BFA /* DataManager.swift in Sources */,
 				AEBF2D20202825C7005BB7B3 /* ViewController.swift in Sources */,
+				AEB1FB7920288B0F004E1BFA /* MapViewController.swift in Sources */,
 				AEBF2D1E202825C7005BB7B3 /* AppDelegate.swift in Sources */,
+				AEB1FB7F2028921F004E1BFA /* GeoChat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
