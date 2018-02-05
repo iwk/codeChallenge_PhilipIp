@@ -1,0 +1,6 @@
+framework module Pods_thredChallenge_PhilipIp {
+  umbrella header "Pods-thredChallenge_PhilipIp-umbrella.h"
+
+  export *
+  module * { export * }
+}

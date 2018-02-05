@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D958E156D41B9EBF81E4165 /* Pods_thredChallenge_PhilipIpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C954ED1EF88F69BBE7D38F /* Pods_thredChallenge_PhilipIpTests.framework */; };
+		770CF51FA3A9895E5D0BFAA9 /* Pods_thredChallenge_PhilipIp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817ACCF5416BA1A2505AF805 /* Pods_thredChallenge_PhilipIp.framework */; };
+		957F0695C6C28AD9A1F2C432 /* Pods_thredChallenge_PhilipIpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3B6D898B22107A26CF1F1B /* Pods_thredChallenge_PhilipIpUITests.framework */; };
 		AEBF2D1E202825C7005BB7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */; };
 		AEBF2D20202825C7005BB7B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1F202825C7005BB7B3 /* ViewController.swift */; };
 		AEBF2D23202825C7005BB7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBF2D21202825C7005BB7B3 /* Main.storyboard */; };
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BB501399FB6B286B9A7C5B0 /* Pods-thredChallenge_PhilipIp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIp.release.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp.release.xcconfig"; sourceTree = "<group>"; };
+		574F8DAB1A09550B356DB566 /* Pods-thredChallenge_PhilipIpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpUITests/Pods-thredChallenge_PhilipIpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F3B6D898B22107A26CF1F1B /* Pods_thredChallenge_PhilipIpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thredChallenge_PhilipIpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		817ACCF5416BA1A2505AF805 /* Pods_thredChallenge_PhilipIp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thredChallenge_PhilipIp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D49CF9EA9854515D324221 /* Pods-thredChallenge_PhilipIpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpTests/Pods-thredChallenge_PhilipIpTests.release.xcconfig"; sourceTree = "<group>"; };
+		867810D259534E8A78ABD361 /* Pods-thredChallenge_PhilipIp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp.debug.xcconfig"; sourceTree = "<group>"; };
+		8D815BCF02B90CF924CAB91E /* Pods-thredChallenge_PhilipIpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpUITests/Pods-thredChallenge_PhilipIpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93C954ED1EF88F69BBE7D38F /* Pods_thredChallenge_PhilipIpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thredChallenge_PhilipIpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF2D1A202825C7005BB7B3 /* thredChallenge_PhilipIp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thredChallenge_PhilipIp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBF2D1F202825C7005BB7B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		AEBF2D39202825C7005BB7B3 /* thredChallenge_PhilipIpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thredChallenge_PhilipIpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF2D3D202825C7005BB7B3 /* thredChallenge_PhilipIpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thredChallenge_PhilipIpUITests.swift; sourceTree = "<group>"; };
 		AEBF2D3F202825C7005BB7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECFF276C2BC0CCB2CAC1E5B /* Pods-thredChallenge_PhilipIpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpTests/Pods-thredChallenge_PhilipIpTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770CF51FA3A9895E5D0BFAA9 /* Pods_thredChallenge_PhilipIp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D958E156D41B9EBF81E4165 /* Pods_thredChallenge_PhilipIpTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957F0695C6C28AD9A1F2C432 /* Pods_thredChallenge_PhilipIpUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D94C86098898B4AB01365AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				867810D259534E8A78ABD361 /* Pods-thredChallenge_PhilipIp.debug.xcconfig */,
+				2BB501399FB6B286B9A7C5B0 /* Pods-thredChallenge_PhilipIp.release.xcconfig */,
+				FECFF276C2BC0CCB2CAC1E5B /* Pods-thredChallenge_PhilipIpTests.debug.xcconfig */,
+				84D49CF9EA9854515D324221 /* Pods-thredChallenge_PhilipIpTests.release.xcconfig */,
+				8D815BCF02B90CF924CAB91E /* Pods-thredChallenge_PhilipIpUITests.debug.xcconfig */,
+				574F8DAB1A09550B356DB566 /* Pods-thredChallenge_PhilipIpUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5141219E13E3F83EF8F7D71A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				817ACCF5416BA1A2505AF805 /* Pods_thredChallenge_PhilipIp.framework */,
+				93C954ED1EF88F69BBE7D38F /* Pods_thredChallenge_PhilipIpTests.framework */,
+				6F3B6D898B22107A26CF1F1B /* Pods_thredChallenge_PhilipIpUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AEBF2D11202825C7005BB7B3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				AEBF2D31202825C7005BB7B3 /* thredChallenge_PhilipIpTests */,
 				AEBF2D3C202825C7005BB7B3 /* thredChallenge_PhilipIpUITests */,
 				AEBF2D1B202825C7005BB7B3 /* Products */,
+				0D94C86098898B4AB01365AF /* Pods */,
+				5141219E13E3F83EF8F7D71A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEBF2D42202825C7005BB7B3 /* Build configuration list for PBXNativeTarget "thredChallenge_PhilipIp" */;
 			buildPhases = (
+				78FE1609668BE98E0892E68D /* [CP] Check Pods Manifest.lock */,
 				AEBF2D16202825C7005BB7B3 /* Sources */,
 				AEBF2D17202825C7005BB7B3 /* Frameworks */,
 				AEBF2D18202825C7005BB7B3 /* Resources */,
+				30253BEA0FF432139FE535AF /* [CP] Embed Pods Frameworks */,
+				DCA66EA3F5D50A525E5FAD17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEBF2D45202825C7005BB7B3 /* Build configuration list for PBXNativeTarget "thredChallenge_PhilipIpTests" */;
 			buildPhases = (
+				B50B727ACBBA825A1E66D3D5 /* [CP] Check Pods Manifest.lock */,
 				AEBF2D2A202825C7005BB7B3 /* Sources */,
 				AEBF2D2B202825C7005BB7B3 /* Frameworks */,
 				AEBF2D2C202825C7005BB7B3 /* Resources */,
+				AF5AAAFF014B967720477CA4 /* [CP] Embed Pods Frameworks */,
+				BF2A6F417BA960095E8EFA50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEBF2D48202825C7005BB7B3 /* Build configuration list for PBXNativeTarget "thredChallenge_PhilipIpUITests" */;
 			buildPhases = (
+				DBF82BBDC19C449BC124B33F /* [CP] Check Pods Manifest.lock */,
 				AEBF2D35202825C7005BB7B3 /* Sources */,
 				AEBF2D36202825C7005BB7B3 /* Frameworks */,
 				AEBF2D37202825C7005BB7B3 /* Resources */,
+				489714B3EB96F18D1E52FEB2 /* [CP] Embed Pods Frameworks */,
+				DD349C8E8E2895DE2B26630D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,161 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30253BEA0FF432139FE535AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		489714B3EB96F18D1E52FEB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIpUITests/Pods-thredChallenge_PhilipIpUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78FE1609668BE98E0892E68D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thredChallenge_PhilipIp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF5AAAFF014B967720477CA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIpTests/Pods-thredChallenge_PhilipIpTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIpTests/Pods-thredChallenge_PhilipIpTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50B727ACBBA825A1E66D3D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thredChallenge_PhilipIpTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF2A6F417BA960095E8EFA50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIpTests/Pods-thredChallenge_PhilipIpTests-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIpTests/Pods-thredChallenge_PhilipIpTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF82BBDC19C449BC124B33F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thredChallenge_PhilipIpUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCA66EA3F5D50A525E5FAD17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD349C8E8E2895DE2B26630D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIpUITests/Pods-thredChallenge_PhilipIpUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEBF2D16202825C7005BB7B3 /* Sources */ = {
@@ -424,6 +628,7 @@
 		};
 		AEBF2D43202825C7005BB7B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867810D259534E8A78ABD361 /* Pods-thredChallenge_PhilipIp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +644,7 @@
 		};
 		AEBF2D44202825C7005BB7B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB501399FB6B286B9A7C5B0 /* Pods-thredChallenge_PhilipIp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +660,7 @@
 		};
 		AEBF2D46202825C7005BB7B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECFF276C2BC0CCB2CAC1E5B /* Pods-thredChallenge_PhilipIpTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +678,7 @@
 		};
 		AEBF2D47202825C7005BB7B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D49CF9EA9854515D324221 /* Pods-thredChallenge_PhilipIpTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +696,7 @@
 		};
 		AEBF2D49202825C7005BB7B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D815BCF02B90CF924CAB91E /* Pods-thredChallenge_PhilipIpUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +713,7 @@
 		};
 		AEBF2D4A202825C7005BB7B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574F8DAB1A09550B356DB566 /* Pods-thredChallenge_PhilipIpUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
