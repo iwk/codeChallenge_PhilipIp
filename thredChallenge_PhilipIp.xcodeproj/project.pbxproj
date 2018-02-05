@@ -112,6 +112,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE2898B720285B5F0035B94E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE2898B820285B740035B94E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE2898BA20285B8B0035B94E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEBF2D1F202825C7005BB7B3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE2898BB20285E400035B94E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEBF2D24202825C7005BB7B3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE2898BC20285E560035B94E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AEBF2D29202825C7005BB7B3 /* Info.plist */,
+				AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */,
+				AEBF2D21202825C7005BB7B3 /* Main.storyboard */,
+				AEBF2D26202825C7005BB7B3 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		AEBF2D11202825C7005BB7B3 = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +178,11 @@
 		AEBF2D1C202825C7005BB7B3 /* thredChallenge_PhilipIp */ = {
 			isa = PBXGroup;
 			children = (
-				AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */,
-				AEBF2D1F202825C7005BB7B3 /* ViewController.swift */,
-				AEBF2D21202825C7005BB7B3 /* Main.storyboard */,
-				AEBF2D24202825C7005BB7B3 /* Assets.xcassets */,
-				AEBF2D26202825C7005BB7B3 /* LaunchScreen.storyboard */,
-				AEBF2D29202825C7005BB7B3 /* Info.plist */,
+				AE2898BB20285E400035B94E /* Resources */,
+				AE2898BC20285E560035B94E /* SupportingFiles */,
+				AE2898BA20285B8B0035B94E /* Controllers */,
+				AE2898B820285B740035B94E /* Views */,
+				AE2898B720285B5F0035B94E /* Models */,
 			);
 			path = thredChallenge_PhilipIp;
 			sourceTree = "<group>";
@@ -310,9 +350,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,9 +477,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -633,7 +681,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZPE65447H;
-				INFOPLIST_FILE = thredChallenge_PhilipIp/Info.plist;
+				INFOPLIST_FILE = thredChallenge_PhilipIp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "philip.ip.thredChallenge-PhilipIp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -649,7 +698,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZPE65447H;
-				INFOPLIST_FILE = thredChallenge_PhilipIp/Info.plist;
+				INFOPLIST_FILE = thredChallenge_PhilipIp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "philip.ip.thredChallenge-PhilipIp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
