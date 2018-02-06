@@ -14,6 +14,8 @@ class DataManager: NSObject {
     
     static let sharedInstance: DataManager = DataManager()
     
+    var geoChats:[GeoChat] = []
+    
     //prevent unintented init
     private override init() {}
     
@@ -35,7 +37,7 @@ class DataManager: NSObject {
             if (error != nil)
             {
                 //TODO: further logging analytics
-                print("data task error:"+urlString)
+                print("data task error: "+urlString)
             }
             
             //completion closure
@@ -45,6 +47,12 @@ class DataManager: NSObject {
         }
         task.resume()
     }
+    
+    
+    //MARK:- Data manipulations
+
+    
+    
     
     
     

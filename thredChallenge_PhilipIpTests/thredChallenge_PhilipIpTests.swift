@@ -16,47 +16,47 @@ class thredChallenge_PhilipIpTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
         jsonData = """
         [
-        {
-        "name":"Sydney",
-        "radius":45000,
-        "maxRadius":50000,
-        "thumbnailUrl":"https://thred-prd-blob-public.s3.amazonaws.com/images/logo_Sydney.png",
-        "coord":[
-         {
-            "latitude":-33.754745,
-            "longitude":150.952663
-         }
-        ]
-        },
-        {
-        "name":"Melbourne ",
-        "radius":50000,
-        "maxRadius":100000,
-        "thumbnailUrl":"https://thred-prd-blob-public.s3.amazonaws.com/images/logo_Melbourne.png",
-        "coord":[
-         {
-            "latitude":-37.826057,
-            "longitude":144.959106
-         }
-        ]
-        }
+            {
+                "name":"Sydney",
+                "radius":45000,
+                "maxRadius":50000,
+                "thumbnailUrl":"https://thred-prd-blob-public.s3.amazonaws.com/images/logo_Sydney.png",
+                "coord":[
+                     {
+                        "latitude":-33.754745,
+                        "longitude":150.952663
+                     }
+                ]
+            },
+            {
+                "name":"Melbourne ",
+                "radius":50000,
+                "maxRadius":100000,
+                "thumbnailUrl":"https://thred-prd-blob-public.s3.amazonaws.com/images/logo_Melbourne.png",
+                "coord":[
+                     {
+                        "latitude":-37.826057,
+                        "longitude":144.959106
+                     }
+                ]
+            }
         ]
         """.data(using: .utf8)!
         
         
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    
+    func testDecodeJson(){
+        let decoded = try! JSONDecoder().decode([GeoChat].self, from: jsonData!)
+        XCTAssertEqual(decoded.count, 2)
+        XCTAssertEqual(decoded[0].name, "Sydney")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     
     func testLoadData() {
         
@@ -85,6 +85,11 @@ class thredChallenge_PhilipIpTests: XCTestCase {
             
         }
         wait(for: [expectation], timeout: 5.0)
+    }
+    
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
     }
     
     func testPerformanceExample() {

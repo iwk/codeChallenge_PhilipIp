@@ -18,6 +18,7 @@ extension CLLocationCoordinate2D: Codable {
         case longitude
     }
     
+    
     //convert from object to data
     public func encode(to encoder: Encoder) throws
     {
@@ -25,6 +26,7 @@ extension CLLocationCoordinate2D: Codable {
         try container.encode(latitude, forKey: .latitude)
         try container.encode(longitude, forKey: .longitude)
     }
+    
     
     //convert from data to object
     public init(from decoder: Decoder) throws
