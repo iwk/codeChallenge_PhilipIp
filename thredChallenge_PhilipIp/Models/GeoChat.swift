@@ -9,18 +9,19 @@
 import Foundation
 import CoreLocation
 
-struct GeoChat//: Codable
+
+struct GeoChat: Codable
 {
     //String, URL, Bool and Date conform to Codable.
-    var title: String
-    var url: URL
-    var isSample: Bool
+    let name: String?
+    let radius:Double?
+    let maxRadius:Double?
+    let thumbnailUrl:URL?
     
-    //The Dictionary is of type [String:String] and String already conforms to Codable.
-    var metaData: [String:String]
+    //CLLocationCoordinate2D not conform to Codable, refer to extension
+    let coord: [CLLocationCoordinate2D?]?
     
-    //PhotoType and Size are also Codable types
-    var coord: CLLocationCoordinate2D
+    
 }
 
 

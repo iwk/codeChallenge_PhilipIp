@@ -14,6 +14,9 @@
 		AEB1FB7B20288F16004E1BFA /* GeoChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */; };
 		AEB1FB7D202890BC004E1BFA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7C202890BC004E1BFA /* DataManager.swift */; };
 		AEB1FB7F2028921F004E1BFA /* GeoChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7E2028921F004E1BFA /* GeoChat.swift */; };
+		AEB1FB8120294265004E1BFA /* CLLocationCoordinate2D+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB8020294265004E1BFA /* CLLocationCoordinate2D+Encodable.swift */; };
+		AEB1FB83202945CE004E1BFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB82202945CE004E1BFA /* Constants.swift */; };
+		AEB1FB8520296552004E1BFA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB8420296552004E1BFA /* Errors.swift */; };
 		AEBF2D1E202825C7005BB7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */; };
 		AEBF2D20202825C7005BB7B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1F202825C7005BB7B3 /* ViewController.swift */; };
 		AEBF2D23202825C7005BB7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBF2D21202825C7005BB7B3 /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 		AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoChatListViewController.swift; sourceTree = "<group>"; };
 		AEB1FB7C202890BC004E1BFA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		AEB1FB7E2028921F004E1BFA /* GeoChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoChat.swift; sourceTree = "<group>"; };
+		AEB1FB8020294265004E1BFA /* CLLocationCoordinate2D+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Encodable.swift"; sourceTree = "<group>"; };
+		AEB1FB82202945CE004E1BFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AEB1FB8420296552004E1BFA /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		AEBF2D1A202825C7005BB7B3 /* thredChallenge_PhilipIp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thredChallenge_PhilipIp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEBF2D1F202825C7005BB7B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				AEB1FB7E2028921F004E1BFA /* GeoChat.swift */,
+				AEB1FB8020294265004E1BFA /* CLLocationCoordinate2D+Encodable.swift */,
+				AEB1FB82202945CE004E1BFA /* Constants.swift */,
+				AEB1FB8420296552004E1BFA /* Errors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -525,9 +534,12 @@
 			files = (
 				AEB1FB7B20288F16004E1BFA /* GeoChatListViewController.swift in Sources */,
 				AEB1FB7D202890BC004E1BFA /* DataManager.swift in Sources */,
+				AEB1FB8120294265004E1BFA /* CLLocationCoordinate2D+Encodable.swift in Sources */,
 				AEBF2D20202825C7005BB7B3 /* ViewController.swift in Sources */,
 				AEB1FB7920288B0F004E1BFA /* MapViewController.swift in Sources */,
+				AEB1FB83202945CE004E1BFA /* Constants.swift in Sources */,
 				AEBF2D1E202825C7005BB7B3 /* AppDelegate.swift in Sources */,
+				AEB1FB8520296552004E1BFA /* Errors.swift in Sources */,
 				AEB1FB7F2028921F004E1BFA /* GeoChat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
