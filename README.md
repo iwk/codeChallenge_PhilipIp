@@ -13,8 +13,10 @@ Pod libraries:
 
 Features:  
 -Support portrait and landscape  
--Marker cluster with element count  
--CAtransition  
+-Group marker with element count  
+-Custom codable struct
+-CA Animations
+
   
 Code design pattern:  
 -MVC  
@@ -23,4 +25,4 @@ Code design pattern:
 -Struct oriented  
 -Retroactive modelling  
 -Codable for data objects  
--Singleton for shared utility functions  
+-Singleton for shared utility  
