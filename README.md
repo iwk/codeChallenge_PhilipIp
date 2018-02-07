@@ -1,25 +1,26 @@
 # thredChallenge_PhilipIp
 Thred code challenge  
   
-Author: Philip  
+Creator: Philip  
   
 Language: swift 4  
   
-pod libraries:  
-GoogleMaps  
-SDWebImage  
-Google-Maps-iOS-Utils  
+Pod libraries:  
+-GoogleMaps  
+-Google-Maps-iOS-Utils  
+-SDWebImage  
+
 
 Features:  
-Support portrait and landscape  
-cluster markers  
-CAtransition  
+-Support portrait and landscape  
+-Marker cluster with element count  
+-CAtransition  
   
 Code design pattern:  
-mvc  
-storyboard for controllers  
-xib for elements  
-struct oriented  
-retroactive modelling  
-codable for data objects  
-singleton for shared utility functions  
+-MVC  
+-Storyboard for controllers  
+-Xib for elements  
+-Struct oriented  
+-Retroactive modelling  
+-Codable for data objects  
+-Singleton for shared utility functions  
