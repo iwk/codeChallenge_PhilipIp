@@ -3,12 +3,15 @@
 
 target 'thredChallenge_PhilipIp' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+  #use_frameworks!
 
   # Pods for thredChallenge_PhilipIp
-	pod 'Alamofire'
+
 	pod 'GoogleMaps'
-	pod 'SwiftyJSON'
+	pod 'SDWebImage'
+	pod 'Google-Maps-iOS-Utils'
+
+
 
   target 'thredChallenge_PhilipIpTests' do
     inherit! :search_paths

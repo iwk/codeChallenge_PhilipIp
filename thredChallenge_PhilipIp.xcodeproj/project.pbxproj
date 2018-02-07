@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D958E156D41B9EBF81E4165 /* Pods_thredChallenge_PhilipIpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C954ED1EF88F69BBE7D38F /* Pods_thredChallenge_PhilipIpTests.framework */; };
-		770CF51FA3A9895E5D0BFAA9 /* Pods_thredChallenge_PhilipIp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817ACCF5416BA1A2505AF805 /* Pods_thredChallenge_PhilipIp.framework */; };
-		957F0695C6C28AD9A1F2C432 /* Pods_thredChallenge_PhilipIpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3B6D898B22107A26CF1F1B /* Pods_thredChallenge_PhilipIpUITests.framework */; };
+		087EB6F42EF9FF20A0AAD4E8 /* libPods-thredChallenge_PhilipIp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC205789E9069637F204B348 /* libPods-thredChallenge_PhilipIp.a */; };
+		66958BB90FD1A2AE0FB2ABB1 /* libPods-thredChallenge_PhilipIpUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 432C1E0A4BE6E65B00C61DE2 /* libPods-thredChallenge_PhilipIpUITests.a */; };
+		AE8C2FFC202AEA73003B2BED /* MapItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C2FFB202AEA73003B2BED /* MapItems.swift */; };
+		AE8C3002202B080F003B2BED /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C3001202B080F003B2BED /* MarkerView.swift */; };
+		AE8C3004202B0824003B2BED /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8C3003202B0824003B2BED /* MarkerView.xib */; };
 		AEB1FB7920288B0F004E1BFA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7820288B0F004E1BFA /* MapViewController.swift */; };
 		AEB1FB7B20288F16004E1BFA /* GeoChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */; };
 		AEB1FB7D202890BC004E1BFA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7C202890BC004E1BFA /* DataManager.swift */; };
@@ -27,6 +29,7 @@
 		AEBF2D28202825C7005BB7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBF2D26202825C7005BB7B3 /* LaunchScreen.storyboard */; };
 		AEBF2D33202825C7005BB7B3 /* thredChallenge_PhilipIpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D32202825C7005BB7B3 /* thredChallenge_PhilipIpTests.swift */; };
 		AEBF2D3E202825C7005BB7B3 /* thredChallenge_PhilipIpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D3D202825C7005BB7B3 /* thredChallenge_PhilipIpUITests.swift */; };
+		FB803A8A2CC5C49F38027851 /* libPods-thredChallenge_PhilipIpTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F75DA62978531E990ED637 /* libPods-thredChallenge_PhilipIpTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +51,16 @@
 
 /* Begin PBXFileReference section */
 		2BB501399FB6B286B9A7C5B0 /* Pods-thredChallenge_PhilipIp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIp.release.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp.release.xcconfig"; sourceTree = "<group>"; };
+		35F75DA62978531E990ED637 /* libPods-thredChallenge_PhilipIpTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-thredChallenge_PhilipIpTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		432C1E0A4BE6E65B00C61DE2 /* libPods-thredChallenge_PhilipIpUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-thredChallenge_PhilipIpUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		574F8DAB1A09550B356DB566 /* Pods-thredChallenge_PhilipIpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpUITests/Pods-thredChallenge_PhilipIpUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6F3B6D898B22107A26CF1F1B /* Pods_thredChallenge_PhilipIpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thredChallenge_PhilipIpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		817ACCF5416BA1A2505AF805 /* Pods_thredChallenge_PhilipIp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thredChallenge_PhilipIp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D49CF9EA9854515D324221 /* Pods-thredChallenge_PhilipIpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpTests/Pods-thredChallenge_PhilipIpTests.release.xcconfig"; sourceTree = "<group>"; };
 		867810D259534E8A78ABD361 /* Pods-thredChallenge_PhilipIp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp.debug.xcconfig"; sourceTree = "<group>"; };
 		8D815BCF02B90CF924CAB91E /* Pods-thredChallenge_PhilipIpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpUITests/Pods-thredChallenge_PhilipIpUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		93C954ED1EF88F69BBE7D38F /* Pods_thredChallenge_PhilipIpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thredChallenge_PhilipIpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8C2FF8202AB020003B2BED /* thredChallenge_PhilipIp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thredChallenge_PhilipIp-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE8C2FFB202AEA73003B2BED /* MapItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItems.swift; sourceTree = "<group>"; };
+		AE8C3001202B080F003B2BED /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		AE8C3003202B0824003B2BED /* MarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
 		AEB1FB7820288B0F004E1BFA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoChatListViewController.swift; sourceTree = "<group>"; };
 		AEB1FB7C202890BC004E1BFA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 		AEBF2D39202825C7005BB7B3 /* thredChallenge_PhilipIpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thredChallenge_PhilipIpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF2D3D202825C7005BB7B3 /* thredChallenge_PhilipIpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thredChallenge_PhilipIpUITests.swift; sourceTree = "<group>"; };
 		AEBF2D3F202825C7005BB7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC205789E9069637F204B348 /* libPods-thredChallenge_PhilipIp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-thredChallenge_PhilipIp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECFF276C2BC0CCB2CAC1E5B /* Pods-thredChallenge_PhilipIpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thredChallenge_PhilipIpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thredChallenge_PhilipIpTests/Pods-thredChallenge_PhilipIpTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				770CF51FA3A9895E5D0BFAA9 /* Pods_thredChallenge_PhilipIp.framework in Frameworks */,
+				087EB6F42EF9FF20A0AAD4E8 /* libPods-thredChallenge_PhilipIp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D958E156D41B9EBF81E4165 /* Pods_thredChallenge_PhilipIpTests.framework in Frameworks */,
+				FB803A8A2CC5C49F38027851 /* libPods-thredChallenge_PhilipIpTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				957F0695C6C28AD9A1F2C432 /* Pods_thredChallenge_PhilipIpUITests.framework in Frameworks */,
+				66958BB90FD1A2AE0FB2ABB1 /* libPods-thredChallenge_PhilipIpUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,9 +132,9 @@
 		5141219E13E3F83EF8F7D71A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				817ACCF5416BA1A2505AF805 /* Pods_thredChallenge_PhilipIp.framework */,
-				93C954ED1EF88F69BBE7D38F /* Pods_thredChallenge_PhilipIpTests.framework */,
-				6F3B6D898B22107A26CF1F1B /* Pods_thredChallenge_PhilipIpUITests.framework */,
+				DC205789E9069637F204B348 /* libPods-thredChallenge_PhilipIp.a */,
+				35F75DA62978531E990ED637 /* libPods-thredChallenge_PhilipIpTests.a */,
+				432C1E0A4BE6E65B00C61DE2 /* libPods-thredChallenge_PhilipIpUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 				AEB1FB82202945CE004E1BFA /* Constants.swift */,
 				AEB1FB8420296552004E1BFA /* Errors.swift */,
 				AEB1FB862029BDB2004E1BFA /* Notifications.swift */,
+				AE8C2FFB202AEA73003B2BED /* MapItems.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,6 +157,8 @@
 			children = (
 				AEB1FB882029C139004E1BFA /* GeoChatCollectionViewCell.swift */,
 				AEB1FB892029C139004E1BFA /* GeoChatCollectionViewCell.xib */,
+				AE8C3001202B080F003B2BED /* MarkerView.swift */,
+				AE8C3003202B0824003B2BED /* MarkerView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +189,7 @@
 				AEBF2D21202825C7005BB7B3 /* Main.storyboard */,
 				AEBF2D26202825C7005BB7B3 /* LaunchScreen.storyboard */,
 				AEB1FB7C202890BC004E1BFA /* DataManager.swift */,
+				AE8C2FF8202AB020003B2BED /* thredChallenge_PhilipIp-Bridging-Header.h */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -312,6 +323,7 @@
 				TargetAttributes = {
 					AEBF2D19202825C7005BB7B3 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					AEBF2D2D202825C7005BB7B3 = {
@@ -353,6 +365,7 @@
 			files = (
 				AEB1FB8B2029C139004E1BFA /* GeoChatCollectionViewCell.xib in Resources */,
 				AEBF2D28202825C7005BB7B3 /* LaunchScreen.storyboard in Resources */,
+				AE8C3004202B0824003B2BED /* MarkerView.xib in Resources */,
 				AEBF2D25202825C7005BB7B3 /* Assets.xcassets in Resources */,
 				AEBF2D23202825C7005BB7B3 /* Main.storyboard in Resources */,
 			);
@@ -382,13 +395,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-thredChallenge_PhilipIp/Pods-thredChallenge_PhilipIp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/KTCenterFlowLayout/KTCenterFlowLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KTCenterFlowLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -547,10 +560,12 @@
 				AEB1FB7D202890BC004E1BFA /* DataManager.swift in Sources */,
 				AEB1FB8120294265004E1BFA /* CLLocationCoordinate2D+Encodable.swift in Sources */,
 				AEB1FB8A2029C139004E1BFA /* GeoChatCollectionViewCell.swift in Sources */,
+				AE8C2FFC202AEA73003B2BED /* MapItems.swift in Sources */,
 				AEBF2D20202825C7005BB7B3 /* ViewController.swift in Sources */,
 				AEB1FB7920288B0F004E1BFA /* MapViewController.swift in Sources */,
 				AEB1FB83202945CE004E1BFA /* Constants.swift in Sources */,
 				AEBF2D1E202825C7005BB7B3 /* AppDelegate.swift in Sources */,
+				AE8C3002202B080F003B2BED /* MarkerView.swift in Sources */,
 				AEB1FB8520296552004E1BFA /* Errors.swift in Sources */,
 				AEB1FB7F2028921F004E1BFA /* GeoChat.swift in Sources */,
 			);
@@ -719,6 +734,7 @@
 			baseConfigurationReference = 867810D259534E8A78ABD361 /* Pods-thredChallenge_PhilipIp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZPE65447H;
 				INFOPLIST_FILE = thredChallenge_PhilipIp/SupportingFiles/Info.plist;
@@ -726,6 +742,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "philip.ip.thredChallenge-PhilipIp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "thredChallenge_PhilipIp/SupportingFiles/thredChallenge_PhilipIp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -736,6 +754,7 @@
 			baseConfigurationReference = 2BB501399FB6B286B9A7C5B0 /* Pods-thredChallenge_PhilipIp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZPE65447H;
 				INFOPLIST_FILE = thredChallenge_PhilipIp/SupportingFiles/Info.plist;
@@ -743,6 +762,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "philip.ip.thredChallenge-PhilipIp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "thredChallenge_PhilipIp/SupportingFiles/thredChallenge_PhilipIp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

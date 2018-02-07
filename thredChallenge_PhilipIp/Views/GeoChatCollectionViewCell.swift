@@ -12,6 +12,9 @@ class GeoChatCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var lblName: UILabel!
     
+    @IBOutlet weak var imgThumb: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

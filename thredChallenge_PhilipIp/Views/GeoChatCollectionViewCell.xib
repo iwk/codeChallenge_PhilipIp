@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,35 +14,45 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GeoChatCollectionViewCell" customModule="thredChallenge_PhilipIp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-QE-52v">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZDV-kc-lMa">
+                        <rect key="frame" x="2" y="8" width="96" height="96"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="OIt-1d-CZc"/>
+                            <constraint firstAttribute="width" secondItem="ZDV-kc-lMa" secondAttribute="height" multiplier="1:1" id="qF4-Ax-fsD"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-QE-52v">
+                        <rect key="frame" x="0.0" y="108" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="JTN-lQ-mC0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="BDc-QE-52v" secondAttribute="trailing" id="IOF-CL-QEY"/>
-                <constraint firstItem="BDc-QE-52v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Kvc-ic-Mw8"/>
-                <constraint firstItem="BDc-QE-52v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YLJ-l2-BCR"/>
+                <constraint firstItem="BDc-QE-52v" firstAttribute="top" secondItem="ZDV-kc-lMa" secondAttribute="bottom" constant="4" id="PkZ-td-sjd"/>
+                <constraint firstItem="BDc-QE-52v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VuU-VR-9Kx"/>
+                <constraint firstItem="ZDV-kc-lMa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="kYq-ex-WDx"/>
+                <constraint firstAttribute="trailing" secondItem="BDc-QE-52v" secondAttribute="trailing" id="p9a-Lu-lFV"/>
+                <constraint firstAttribute="trailing" secondItem="ZDV-kc-lMa" secondAttribute="trailing" constant="2" id="uXC-SD-6No"/>
+                <constraint firstItem="ZDV-kc-lMa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="xLB-g7-9td"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="120" height="120"/>
+            <size key="customSize" width="101" height="146"/>
             <connections>
+                <outlet property="imgThumb" destination="ZDV-kc-lMa" id="U8H-3O-3FA"/>
                 <outlet property="lblName" destination="BDc-QE-52v" id="4FG-ht-2fE"/>
             </connections>
-            <point key="canvasLocation" x="152" y="147"/>
+            <point key="canvasLocation" x="142" y="158.5"/>
         </collectionViewCell>
     </objects>
 </document>

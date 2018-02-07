@@ -59,6 +59,7 @@ class ViewController: UIViewController {
     func populateData()
     {
         geoChatListViewController?.reloadData()
+        mapViewController?.reloadData()
     }
 
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import SDWebImage
 
 class GeoChatListViewController: UIViewController {
 
@@ -29,6 +30,7 @@ class GeoChatListViewController: UIViewController {
         collectionView.dataSource = self
 
         collectionView.register(UINib(nibName: GeoChatCollectionViewCellClass, bundle: nil), forCellWithReuseIdentifier: GeoChatCollectionViewCellClass)
+        
         
     }
     
@@ -62,7 +64,7 @@ class GeoChatListViewController: UIViewController {
 
 }
 
-extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -73,6 +75,19 @@ extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return geoChats.count
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 150)
+    }
+    
+    /*
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        
+        return UIEdgeInsets(top: 0, left: padding, bottom: 0, right: padding)
+        
+    }*/
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -86,7 +101,17 @@ extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewD
             print("cell loaded")
         }
         
-        cell.lblName.text = "ok"
+        //populate text
+        cell.lblName.text = geoChats[indexPath.row].name
+      
+        //populate image
+        //cell.imgThumb.sd_setImage(with: , )
+        cell.imgThumb.sd_setImage(with: geoChats[indexPath.row].thumbnailUrl, placeholderImage: UIImage(named: "chat"), options: .scaleDownLargeImages) { (image, err, cache, url) in
+         
+            cell.imgThumb.layer.cornerRadius = cell.imgThumb.bounds.width/2
+        }
+        
+        
         
         return cell
     }
