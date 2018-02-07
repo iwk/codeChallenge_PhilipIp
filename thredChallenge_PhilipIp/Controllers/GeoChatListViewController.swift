@@ -99,8 +99,10 @@ extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewD
         //populate image
         cell.imgThumb.sd_setImage(with: geoChats[indexPath.row].thumbnailUrl, placeholderImage: UIImage(named: "chat"), options: .scaleDownLargeImages) { (image, err, cache, url) in
             
-            cell.imgThumb.layer.cornerRadius = cell.imgThumb.bounds.width/2
+            
         }
+        
+        cell.imgThumb.layer.cornerRadius = cell.imgThumb.bounds.width/2
         
         
         

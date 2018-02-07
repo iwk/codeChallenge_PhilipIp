@@ -16,6 +16,10 @@
             <rect key="frame" x="0.0" y="0.0" width="106" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6Y-r0-3Vw">
+                    <rect key="frame" x="16" y="13" width="84" height="84"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Dt-4W-tew">
                     <rect key="frame" x="11" y="8" width="84" height="84"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -34,6 +38,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="imgThumb" destination="6Dt-4W-tew" id="KKA-we-Xhx"/>
+                <outlet property="imgThumb2" destination="g6Y-r0-3Vw" id="sMF-d5-qb5"/>
                 <outlet property="lblCount" destination="ZOu-Xn-r9k" id="ghf-Wl-MVD"/>
             </connections>
             <point key="canvasLocation" x="131" y="-171"/>

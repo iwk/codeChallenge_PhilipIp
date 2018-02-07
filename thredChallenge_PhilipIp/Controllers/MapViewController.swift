@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 
 
-//MARK:- initialize
+//MARK:- initialize map
 class MapViewController: UIViewController {
     
     //Storyboard
@@ -38,7 +38,6 @@ class MapViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         initMap()
-        //initLocation() //TODO: need to uncomment in release
         initMapItems()
     }
     
@@ -50,7 +49,7 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         mapView.layer.cornerRadius = 16
         
-        mapView.isMyLocationEnabled = true
+        
         mapView.settings.myLocationButton = true
         
     }
@@ -118,18 +117,18 @@ class MapViewController: UIViewController {
 extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUClusterRendererDelegate {
     
     
-    func imageForMarker(userData:Any)->UIView {
+    func viewForMarker(userData:Any)->UIView {
         
         if userData is POIItem {
             
-            //marker
+            //ini markerView
             let nib:Array = Bundle.main.loadNibNamed("MarkerView"
                 , owner: self, options: nil)!
             let markerView = nib[0] as? MarkerView
             markerView?.lblCount.isHidden = true
             
+            //set image
             markerView?.imgThumb.sd_setImage(with: (userData as! POIItem).thumbnailUrl, placeholderImage: UIImage(named: "chat"), options: .scaleDownLargeImages)
-            
             markerView?.imgThumb.clipsToBounds = true
             markerView?.imgThumb.layer.cornerRadius = 20
             
@@ -141,27 +140,33 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
             //cluster
             let cluster = userData as! GMUStaticCluster
             
+            //init markerView
             let nib:Array = Bundle.main.loadNibNamed("MarkerView"
                 , owner: self, options: nil)!
             let markerView = nib[0] as? MarkerView
             
             
-            //shadow
+            //shadow for cluster
             markerView?.layer.masksToBounds = false
             markerView?.layer.shadowColor = UIColor.black.cgColor
             markerView?.layer.shadowOpacity = 0.2
             markerView?.layer.shadowOffset = CGSize(width: 15, height: 12)
             markerView?.imgThumb.layer.shadowRadius = 1
             markerView?.layer.shadowPath = UIBezierPath(rect: (markerView?.imgThumb.bounds)!).cgPath
-            markerView?.imgThumb.layer.shouldRasterize = true
-            markerView?.imgThumb.layer.rasterizationScale = 0.5
+            //markerView?.layer.shouldRasterize = true
+            //markerView?.layer.rasterizationScale = 0.5
             
-            //update image
+            //set first image in cluster
             markerView?.imgThumb.sd_setImage(with: (cluster.items.first as! POIItem).thumbnailUrl, placeholderImage: UIImage(named: "chat"), options: .scaleDownLargeImages)
+            
+            //set second image in cluster
+            markerView?.imgThumb2.sd_setImage(with: (cluster.items[1] as! POIItem).thumbnailUrl, placeholderImage: UIImage(named: "chat"), options: .scaleDownLargeImages)
             
             //thumb corner radius
             markerView?.imgThumb.clipsToBounds = true
             markerView?.imgThumb.layer.cornerRadius = 20
+            markerView?.imgThumb2.clipsToBounds = true
+            markerView?.imgThumb2.layer.cornerRadius = 20
             
             //label corner radius
             markerView?.lblCount.text = String(cluster.items.count)
@@ -177,7 +182,7 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
     //set marker before render
     func renderer(_ renderer: GMUClusterRenderer, willRenderMarker marker: GMSMarker) {
         
-        marker.iconView = imageForMarker(userData: marker.userData ?? "")
+        marker.iconView = viewForMarker(userData: marker.userData ?? "")
         
     }
     
@@ -259,12 +264,19 @@ extension MapViewController: CLLocationManagerDelegate {
     
     
     func initLocation() {
+        mapView.isMyLocationEnabled = true
+        
         locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         locationManager.distanceFilter = 50
         locationManager.startUpdatingLocation()
         locationManager.delegate = self
+    }
+    
+    func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
+        initLocation()
+        return false
     }
     
     
