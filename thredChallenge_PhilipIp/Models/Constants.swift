@@ -9,6 +9,7 @@
 import Foundation
 
 struct DataAPI {
+    
     static let urlString = "https://api.sweep.im/api/v3/public/chats"
 
 

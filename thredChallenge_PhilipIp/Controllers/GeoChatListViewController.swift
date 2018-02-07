@@ -130,7 +130,7 @@ extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewD
             cell?.layer.add(animation, forKey: nil)
             
             
-            //delay after animation
+            //delay for animation
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                 
                 //init details view controller
