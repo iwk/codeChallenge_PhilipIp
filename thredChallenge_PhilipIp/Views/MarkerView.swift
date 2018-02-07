@@ -20,6 +20,7 @@ class MarkerView: UIView {
     
     @IBOutlet weak var lblCount: UILabel!
     @IBOutlet weak var imgThumb: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

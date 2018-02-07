@@ -10,10 +10,14 @@ import UIKit
 //import SDWebImage
 
 class GeoChatListViewController: UIViewController {
-
+    
+    //UI
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
     let GeoChatCollectionViewCellClass = "GeoChatCollectionViewCell"
+    
+    var acceptInteraction = true
     
     //getter for shared variable
     var geoChats: [GeoChat] {
@@ -24,22 +28,23 @@ class GeoChatListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //prepare collection view
         collectionView.delegate = self
         collectionView.dataSource = self
-
+        
         collectionView.register(UINib(nibName: GeoChatCollectionViewCellClass, bundle: nil), forCellWithReuseIdentifier: GeoChatCollectionViewCellClass)
         
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
+    override func viewWillAppear(_ animated: Bool) {
+        acceptInteraction = true
     }
     
-
-
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -51,44 +56,31 @@ class GeoChatListViewController: UIViewController {
         }
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
 }
 
 extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    //set section
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     
-    
+    //set cell count
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return geoChats.count
     }
     
-    
+    //set cell size
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 100, height: 150)
     }
     
-    /*
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        
-        return UIEdgeInsets(top: 0, left: padding, bottom: 0, right: padding)
-        
-    }*/
     
+    //display cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         var cell:GeoChatCollectionViewCell! = collectionView.dequeueReusableCell(withReuseIdentifier: GeoChatCollectionViewCellClass, for: indexPath) as! GeoChatCollectionViewCell
@@ -103,17 +95,58 @@ extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewD
         
         //populate text
         cell.lblName.text = geoChats[indexPath.row].name
-      
+        
         //populate image
-        //cell.imgThumb.sd_setImage(with: , )
         cell.imgThumb.sd_setImage(with: geoChats[indexPath.row].thumbnailUrl, placeholderImage: UIImage(named: "chat"), options: .scaleDownLargeImages) { (image, err, cache, url) in
-         
+            
             cell.imgThumb.layer.cornerRadius = cell.imgThumb.bounds.width/2
         }
         
         
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if acceptInteraction
+        {
+            acceptInteraction = false
+            
+            //get selected geoChat
+            let geoChat = geoChats[indexPath.row]
+            print(geoChat)
+            
+            let cell = collectionView.cellForItem(at: indexPath)
+            
+            //animation
+            let animation: CATransition = CATransition()
+            //animation.delegate = self
+            animation.duration = 0.8
+            animation.timingFunction = .none
+            animation.type = "rippleEffect"
+            cell?.layer.add(animation, forKey: nil)
+            
+            
+            //delay after animation
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                
+                //init details view controller
+                let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsView") as? DetailsViewController
+                
+                //push with transition
+                let transition = CATransition()
+                transition.duration = 0.5
+                transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+                transition.type = kCATransitionReveal
+                transition.subtype = kCATransitionFromRight
+                self.navigationController?.view.layer.add(transition, forKey: nil)
+                //_ = self.navigationController?.popToRootViewController(animated: false)
+                self.navigationController?.pushViewController(detailsViewController!, animated: false)
+                
+            }
+        }
+        
     }
 }
 

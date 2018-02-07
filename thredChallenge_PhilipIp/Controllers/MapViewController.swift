@@ -28,6 +28,7 @@ class MapViewController: UIViewController {
     var currentLocation: CLLocation?
     var zoomLevel: Float = 10.0
     
+    //cluster
     private var clusterManager: GMUClusterManager!
     
     
@@ -56,7 +57,7 @@ class MapViewController: UIViewController {
     
     func initMapItems()
     {
-        
+        //Cluster objects
         var iconGenerator : GMUDefaultClusterIconGenerator!
         iconGenerator = GMUDefaultClusterIconGenerator()
         let algorithm = GMUNonHierarchicalDistanceBasedAlgorithm()
@@ -139,7 +140,7 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
         } else {
             //cluster
             let cluster = userData as! GMUStaticCluster
-        
+            
             let nib:Array = Bundle.main.loadNibNamed("MarkerView"
                 , owner: self, options: nil)!
             let markerView = nib[0] as? MarkerView
@@ -173,6 +174,7 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
         
     }
     
+    //set marker before render
     func renderer(_ renderer: GMUClusterRenderer, willRenderMarker marker: GMSMarker) {
         
         marker.iconView = imageForMarker(userData: marker.userData ?? "")
@@ -192,18 +194,48 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
         if (marker.userData is POIItem)
         {
             let item = marker.userData as! POIItem
-            marker.title = item.name
-            mapView.selectedMarker = marker
+            
+            if (mapView.selectedMarker != marker)
+            {
+                //select marker
+                
+                marker.title = item.name
+                mapView.selectedMarker = marker
+                
+                //focus camera with offset
+                var point = mapView.projection.point(for: marker.position)
+                point.y = point.y - 70
+                let cameraUpdate:GMSCameraUpdate = GMSCameraUpdate.setTarget(mapView.projection.coordinate(for: point))
+                mapView.animate(with: cameraUpdate)
+            } else
+            {
+                
+                let geoChat = geoChats.filter { $0.name == item.name }
+                print(geoChat)
+                
+                //init details view controller
+                let detailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailsView") as? DetailsViewController
+                
+                //push with transition
+                let transition = CATransition()
+                transition.duration = 0.5
+                transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+                transition.type = kCATransitionReveal
+                transition.subtype = kCATransitionFromRight
+                self.navigationController?.view.layer.add(transition, forKey: nil)
+                //_ = self.navigationController?.popToRootViewController(animated: false)
+                self.navigationController?.pushViewController(detailsViewController!, animated: false)
+            }
+            
         } else
         {
-            //let cluster = marker.userData as! GMUStaticCluster
-            //print(cluster.items)
-            let cameraUpdate = GMSCameraUpdate.setTarget(marker.position, zoom: 16)
             
+            //zoom to location when cluster marker is tapped
+            let cameraUpdate = GMSCameraUpdate.setTarget(marker.position, zoom: 16)
             mapView.animate(with: cameraUpdate)
         }
         
-       
+        
         
         return true
     }
@@ -212,11 +244,10 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         
         /*
-        let item = POIItem(position: coordinate, name: "NEW")
-        
-        clusterManager.add(item)
-        
-        clusterManager.cluster()*/
+         //not in use
+         let item = POIItem(position: coordinate, name: "NEW")
+         clusterManager.add(item)
+         clusterManager.cluster()*/
     }
 }
 

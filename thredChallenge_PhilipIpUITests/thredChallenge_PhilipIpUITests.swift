@@ -28,9 +28,22 @@ class thredChallenge_PhilipIpUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testCollectionView() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCUIDevice.shared.orientation = .portrait
+        
+        let app = XCUIApplication()
+        let collectionViewsQuery = app.collectionViews
+        
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.staticTexts["Melbourne "]/*[[".cells.staticTexts[\"Melbourne \"]",".staticTexts[\"Melbourne \"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.statusBars.children(matching: .other).element.children(matching: .other).element(boundBy: 0).tap()
+        app.navigationBars["thredChallenge_PhilipIp.DetailsView"].buttons["Back"].tap()
+        XCUIDevice.shared.orientation = .faceUp
+        
+        
+        
+        
     }
     
 }

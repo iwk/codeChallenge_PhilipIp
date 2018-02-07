@@ -9,11 +9,12 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     private var geoChatListViewController: GeoChatListViewController?
     private var mapViewController: MapViewController?
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     //var geoChats:[GeoChat] = []
     
@@ -58,6 +59,10 @@ class ViewController: UIViewController {
     
     func populateData()
     {
+        DispatchQueue.main.async{
+            self.activityIndicator.stopAnimating()
+        }
+        
         geoChatListViewController?.reloadData()
         mapViewController?.reloadData()
     }

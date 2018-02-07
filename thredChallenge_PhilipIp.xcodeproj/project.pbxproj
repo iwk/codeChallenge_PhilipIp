@@ -12,6 +12,7 @@
 		AE8C2FFC202AEA73003B2BED /* MapItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C2FFB202AEA73003B2BED /* MapItems.swift */; };
 		AE8C3002202B080F003B2BED /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C3001202B080F003B2BED /* MarkerView.swift */; };
 		AE8C3004202B0824003B2BED /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8C3003202B0824003B2BED /* MarkerView.xib */; };
+		AE8C3006202B3631003B2BED /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C3005202B3631003B2BED /* DetailsViewController.swift */; };
 		AEB1FB7920288B0F004E1BFA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7820288B0F004E1BFA /* MapViewController.swift */; };
 		AEB1FB7B20288F16004E1BFA /* GeoChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */; };
 		AEB1FB7D202890BC004E1BFA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB7C202890BC004E1BFA /* DataManager.swift */; };
@@ -23,7 +24,7 @@
 		AEB1FB8A2029C139004E1BFA /* GeoChatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1FB882029C139004E1BFA /* GeoChatCollectionViewCell.swift */; };
 		AEB1FB8B2029C139004E1BFA /* GeoChatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB1FB892029C139004E1BFA /* GeoChatCollectionViewCell.xib */; };
 		AEBF2D1E202825C7005BB7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */; };
-		AEBF2D20202825C7005BB7B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1F202825C7005BB7B3 /* ViewController.swift */; };
+		AEBF2D20202825C7005BB7B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF2D1F202825C7005BB7B3 /* MainViewController.swift */; };
 		AEBF2D23202825C7005BB7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBF2D21202825C7005BB7B3 /* Main.storyboard */; };
 		AEBF2D25202825C7005BB7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBF2D24202825C7005BB7B3 /* Assets.xcassets */; };
 		AEBF2D28202825C7005BB7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBF2D26202825C7005BB7B3 /* LaunchScreen.storyboard */; };
@@ -61,6 +62,7 @@
 		AE8C2FFB202AEA73003B2BED /* MapItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItems.swift; sourceTree = "<group>"; };
 		AE8C3001202B080F003B2BED /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		AE8C3003202B0824003B2BED /* MarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
+		AE8C3005202B3631003B2BED /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		AEB1FB7820288B0F004E1BFA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoChatListViewController.swift; sourceTree = "<group>"; };
 		AEB1FB7C202890BC004E1BFA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		AEB1FB892029C139004E1BFA /* GeoChatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeoChatCollectionViewCell.xib; sourceTree = "<group>"; };
 		AEBF2D1A202825C7005BB7B3 /* thredChallenge_PhilipIp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thredChallenge_PhilipIp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF2D1D202825C7005BB7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEBF2D1F202825C7005BB7B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEBF2D1F202825C7005BB7B3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AEBF2D22202825C7005BB7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEBF2D24202825C7005BB7B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBF2D27202825C7005BB7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -166,9 +168,10 @@
 		AE2898BA20285B8B0035B94E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEBF2D1F202825C7005BB7B3 /* ViewController.swift */,
+				AEBF2D1F202825C7005BB7B3 /* MainViewController.swift */,
 				AEB1FB7820288B0F004E1BFA /* MapViewController.swift */,
 				AEB1FB7A20288F16004E1BFA /* GeoChatListViewController.swift */,
+				AE8C3005202B3631003B2BED /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -561,13 +564,14 @@
 				AEB1FB8120294265004E1BFA /* CLLocationCoordinate2D+Encodable.swift in Sources */,
 				AEB1FB8A2029C139004E1BFA /* GeoChatCollectionViewCell.swift in Sources */,
 				AE8C2FFC202AEA73003B2BED /* MapItems.swift in Sources */,
-				AEBF2D20202825C7005BB7B3 /* ViewController.swift in Sources */,
+				AEBF2D20202825C7005BB7B3 /* MainViewController.swift in Sources */,
 				AEB1FB7920288B0F004E1BFA /* MapViewController.swift in Sources */,
 				AEB1FB83202945CE004E1BFA /* Constants.swift in Sources */,
 				AEBF2D1E202825C7005BB7B3 /* AppDelegate.swift in Sources */,
 				AE8C3002202B080F003B2BED /* MarkerView.swift in Sources */,
 				AEB1FB8520296552004E1BFA /* Errors.swift in Sources */,
 				AEB1FB7F2028921F004E1BFA /* GeoChat.swift in Sources */,
+				AE8C3006202B3631003B2BED /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

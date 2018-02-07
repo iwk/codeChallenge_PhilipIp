@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="thredChallenge_PhilipIp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="thredChallenge_PhilipIp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,12 +35,17 @@
                                     <segue destination="Xum-Dz-FED" kind="embed" id="cL0-dC-KVt"/>
                                 </connections>
                             </containerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="MGK-0c-xHs">
+                                <rect key="frame" x="177" y="472" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.079322926700115204" green="0.76555114984512329" blue="0.79684168100357056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9Sr-FW-nih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AMX-Wd-Ry2"/>
+                            <constraint firstItem="MGK-0c-xHs" firstAttribute="centerX" secondItem="9Sr-FW-nih" secondAttribute="centerX" id="BU9-na-DtC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Sr-FW-nih" secondAttribute="trailing" constant="16" id="Cgn-9U-1q8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Sr-FW-nih" secondAttribute="bottom" constant="20" id="GE1-po-M2v"/>
+                            <constraint firstItem="MGK-0c-xHs" firstAttribute="centerY" secondItem="9Sr-FW-nih" secondAttribute="centerY" id="Xfv-Vy-CNE"/>
                             <constraint firstItem="nmV-s4-dYj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fca-Q6-xqz"/>
                             <constraint firstItem="nmV-s4-dYj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="idH-tq-SQK"/>
                             <constraint firstItem="9Sr-FW-nih" firstAttribute="top" secondItem="nmV-s4-dYj" secondAttribute="bottom" constant="8" id="kYg-bZ-dGr"/>
@@ -49,6 +54,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="JHO-Cs-NM0"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="MGK-0c-xHs" id="acN-gw-ja1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,6 +158,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9j-B1-JW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1267" y="360"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="cA4-yl-h2b">
+            <objects>
+                <viewController storyboardIdentifier="DetailsView" id="E0A-zC-fh9" customClass="DetailsViewController" customModule="thredChallenge_PhilipIp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s76-I9-i2S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMO-jS-RCM">
+                                <rect key="frame" x="16" y="80" width="343" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="uEA-9K-OJb"/>
+                                </constraints>
+                                <string key="text">This is a placeholder
+
+
+
+
+Thank you for checking</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cWy-Dh-Bgc" firstAttribute="trailing" secondItem="xMO-jS-RCM" secondAttribute="trailing" constant="16" id="ITV-mq-trk"/>
+                            <constraint firstItem="xMO-jS-RCM" firstAttribute="leading" secondItem="cWy-Dh-Bgc" secondAttribute="leading" constant="16" id="Npt-F9-3RZ"/>
+                            <constraint firstItem="xMO-jS-RCM" firstAttribute="top" secondItem="cWy-Dh-Bgc" secondAttribute="top" constant="60" id="zS3-1W-rDC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cWy-Dh-Bgc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qn4-YK-fDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072.8000000000002" y="178.56071964017991"/>
         </scene>
     </scenes>
 </document>
