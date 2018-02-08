@@ -26,3 +26,8 @@ Code design pattern:
 -Retroactive modelling  
 -Codable for data objects  
 -Singleton for shared utilities  
+
+
+Testings:
+-Unit tests for data processing 
+-UI test for recorded flow
