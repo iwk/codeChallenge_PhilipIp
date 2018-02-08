@@ -3,20 +3,20 @@ Thred code challenge
   
 Creator: Philip  
   
-Language: swift 4  
+Language: Swift 4  
   
 Pod libraries:  
 -GoogleMaps  
 -Google-Maps-iOS-Utils  
 -SDWebImage  
-
-
+  
+  
 Features:  
 -Support portrait and landscape  
 -Group marker with element count  
 -Custom codable struct  
 -CA Animations
-
+  
   
 Code design pattern:  
 -MVC  
@@ -26,8 +26,8 @@ Code design pattern:
 -Retroactive modelling  
 -Codable for data objects  
 -Singleton for shared utilities  
-
-
-Testings:
--Unit tests for data processing 
--UI test for recorded flow
+  
+  
+Testings:  
+-Unit tests for data processing  
+-UI test for recorded flow  
