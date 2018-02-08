@@ -12,7 +12,7 @@ Pod libraries:
   
   
 Features:  
--Support portrait and landscape  
+-Supports portrait and landscape  
 -Group marker with element count  
 -Custom codable struct  
 -CA Animations
