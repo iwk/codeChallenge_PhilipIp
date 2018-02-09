@@ -18,7 +18,7 @@ struct GeoChat: Codable
     let maxRadius:Double?
     let thumbnailUrl:URL?
     
-    //CLLocationCoordinate2D not conform to Codable, refer to extension
+    //CLLocationCoordinate2D not conform to Codable, refer to extension file for custom decoding
     let coord: [CLLocationCoordinate2D?]?
     
     

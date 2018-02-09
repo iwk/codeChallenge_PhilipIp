@@ -9,7 +9,6 @@
 import Foundation
 
 //Singleton class encapsulating generic data requests
-
 class DataManager: NSObject {
     
     static let sharedInstance: DataManager = DataManager()
@@ -48,8 +47,6 @@ class DataManager: NSObject {
         task.resume()
     }
     
-    
-    //MARK:- Data manipulations
 
     
     

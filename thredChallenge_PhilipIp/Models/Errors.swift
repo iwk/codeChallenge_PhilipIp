@@ -9,6 +9,8 @@
 import Foundation
 
 enum NetworkError: Error {
+    
+    //custom error types
     case invalidUrl
     case dataEmpty //place holder
     case dataInvalid //place holder

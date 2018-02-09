@@ -10,6 +10,7 @@ import Foundation
 
 struct DataAPI {
     
+    //url of geochat api
     static let urlString = "https://api.sweep.im/api/v3/public/chats"
 
 

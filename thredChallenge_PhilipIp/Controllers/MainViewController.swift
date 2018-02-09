@@ -55,6 +55,7 @@ class MainViewController: UIViewController {
             if (jsonData != nil) {
                 
                 //convert json data into objects by Swift4 codable protocol
+                //one line magic, not to create another function this time
                 DataManager.sharedInstance.geoChats = try! JSONDecoder().decode([GeoChat].self, from: jsonData!)
                 
                 print("number of items in json:")

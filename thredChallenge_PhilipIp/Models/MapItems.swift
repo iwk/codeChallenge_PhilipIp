@@ -10,6 +10,8 @@ import Foundation
 
 /// Point of Interest Item which implements the GMUClusterItem protocol.
 class POIItem: NSObject, GMUClusterItem {
+    
+    //details stored in marker
     var position: CLLocationCoordinate2D
     var name: String!
     var thumbnailUrl: URL?

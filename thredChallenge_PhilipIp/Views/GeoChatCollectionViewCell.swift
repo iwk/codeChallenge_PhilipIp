@@ -10,8 +10,8 @@ import UIKit
 
 class GeoChatCollectionViewCell: UICollectionViewCell {
 
+    //UI
     @IBOutlet weak var lblName: UILabel!
-    
     @IBOutlet weak var imgThumb: UIImageView!
     
     
