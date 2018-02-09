@@ -14,9 +14,10 @@ class GeoChatListViewController: UIViewController {
     //UI
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
+    //name for registering reusable cell
     let GeoChatCollectionViewCellClass = "GeoChatCollectionViewCell"
     
+    //block double tap while playing animation
     var acceptInteraction = true
     
     //getter for shared variable
@@ -32,12 +33,11 @@ class GeoChatListViewController: UIViewController {
         //prepare collection view
         collectionView.delegate = self
         collectionView.dataSource = self
-        
         collectionView.register(UINib(nibName: GeoChatCollectionViewCellClass, bundle: nil), forCellWithReuseIdentifier: GeoChatCollectionViewCellClass)
-        
         
     }
     
+    //re enable interaction after coming back from other controllers
     override func viewWillAppear(_ animated: Bool) {
         acceptInteraction = true
     }
@@ -50,6 +50,7 @@ class GeoChatListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     func reloadData() {
         DispatchQueue.main.async{
             self.collectionView.reloadData()
@@ -61,6 +62,8 @@ class GeoChatListViewController: UIViewController {
     
 }
 
+
+//MARK:- group of functions for collection view
 extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     //set section
@@ -109,6 +112,8 @@ extension GeoChatListViewController: UICollectionViewDelegate, UICollectionViewD
         return cell
     }
     
+    
+    //item is selected, get geochat, use prepare segue to open details view
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if acceptInteraction

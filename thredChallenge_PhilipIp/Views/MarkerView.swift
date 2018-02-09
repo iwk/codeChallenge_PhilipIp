@@ -10,9 +10,13 @@ import UIKit
 
 class MarkerView: UIView {
     
+    //label showing number of markers represented in the cluster
     @IBOutlet weak var lblCount: UILabel!
+    
+    //thumbnail
     @IBOutlet weak var imgThumb: UIImageView!
     
+    //thumbnail stacked under to represent multiple markers in cluster
     @IBOutlet weak var imgThumb2: UIImageView!
     
     override func awakeFromNib() {
