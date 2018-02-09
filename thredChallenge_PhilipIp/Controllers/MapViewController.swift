@@ -41,6 +41,7 @@ class MapViewController: UIViewController {
         initMapItems()
     }
     
+    //init map view
     func initMap()
     {
         let camera = GMSCameraPosition.camera(withLatitude: -33.855223,
@@ -49,11 +50,12 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         mapView.layer.cornerRadius = 16
         
-        
         mapView.settings.myLocationButton = true
         
     }
     
+    
+    //prepare map for clusters
     func initMapItems()
     {
         //Cluster objects
@@ -75,6 +77,8 @@ class MapViewController: UIViewController {
         
     }
     
+    
+    //add markers or clusters
     func addCoords(isCluster: Bool) {
         
         print("geoChats.count")
@@ -94,11 +98,11 @@ class MapViewController: UIViewController {
         
     }
     
+    
     func reloadData() {
         DispatchQueue.main.async{
             self.initMapItems()
         }
-        
     }
     
     
@@ -117,6 +121,7 @@ class MapViewController: UIViewController {
 extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUClusterRendererDelegate {
     
     
+    //generate views according to type of markers
     func viewForMarker(userData:Any)->UIView {
         
         if userData is POIItem {
@@ -133,7 +138,6 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
             markerView?.imgThumb.layer.cornerRadius = 20
             
             return markerView!
-            
             
             
         } else {
@@ -179,7 +183,8 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
         
     }
     
-    //set marker before render
+    
+    //create marker before render
     func renderer(_ renderer: GMUClusterRenderer, willRenderMarker marker: GMSMarker) {
         
         marker.iconView = viewForMarker(userData: marker.userData ?? "")
@@ -187,6 +192,7 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
     }
     
     
+    //user tapped cluster, zoomin cluster to expand markers
     private func clusterManager(clusterManager: GMUClusterManager, didTapCluster cluster: GMUCluster) {
         let newCamera = GMSCameraPosition.camera(withTarget: cluster.position,
                                                  zoom: mapView.camera.zoom + 1)
@@ -194,12 +200,15 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
         mapView.moveCamera(update)
     }
     
-    //Show the marker title while tapping
+    
+    //user tapped marker
+    //show name for first tap/ open details view if tapped again
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         if (marker.userData is POIItem)
         {
             let item = marker.userData as! POIItem
             
+            //tap again if marker is selected already
             if (mapView.selectedMarker != marker)
             {
                 //select marker
@@ -240,14 +249,13 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
             mapView.animate(with: cameraUpdate)
         }
         
-        
-        
+
         return true
     }
     
     
+    //tapped coordinate in map
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        
         /*
          //not in use
          let item = POIItem(position: coordinate, name: "NEW")
@@ -262,7 +270,8 @@ extension MapViewController: GMSMapViewDelegate, GMUClusterManagerDelegate, GMUC
 //MARK:- Handle user location
 extension MapViewController: CLLocationManagerDelegate {
     
-    
+    //request for permission when user tapped location button
+    //not to request after app launch for better ux
     func initLocation() {
         mapView.isMyLocationEnabled = true
         
@@ -274,13 +283,14 @@ extension MapViewController: CLLocationManagerDelegate {
         locationManager.delegate = self
     }
     
+    //tapped location button
     func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
         initLocation()
         return false
     }
     
     
-    // Handle incoming location events.
+    // Handle incoming location events - location updated
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
         let location: CLLocation = locations.last!
@@ -299,6 +309,7 @@ extension MapViewController: CLLocationManagerDelegate {
         
     }
     
+    
     // Handle authorization for the location manager.
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
@@ -315,6 +326,7 @@ extension MapViewController: CLLocationManagerDelegate {
             print("Location status is OK.")
         }
     }
+    
     
     // Handle location manager errors.
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
