@@ -39,13 +39,22 @@ class MainViewController: UIViewController {
         
     }
     
+    //load data when collection view is ready
     override func viewDidAppear(_ animated: Bool) {
         
+        downloadAndProcessData()
+        
+    }
+    
+    //download and process data
+    func downloadAndProcessData()
+    {
         DataManager.sharedInstance.loadJson(urlString: DataAPI.urlString) { (jsonData, err) in
             
             //handle json data
             if (jsonData != nil) {
                 
+                //convert json into objects by Swift4 codable
                 DataManager.sharedInstance.geoChats = try! JSONDecoder().decode([GeoChat].self, from: jsonData!)
                 
                 print("number of items in json:")
@@ -57,6 +66,8 @@ class MainViewController: UIViewController {
         }
     }
     
+    
+    //update views and children controllers, called when data is loaded
     func populateData()
     {
         DispatchQueue.main.async{
